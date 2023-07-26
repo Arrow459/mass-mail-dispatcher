@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mass Mail Dispatcher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="bg">
+        <div class="container">
+            <div class="select animated fadeInDown delay-4s">
+                <h1 class="head">Mass Mail Dispatcher</h1>
+                <input type="file" id="upload" accept="text/csv" />
+            </div>
+            <div class="mailInfo">
+                <form onsubmit="sendEmail(); reset(); return false;">
+                    <h2 class="box-heading">WRITE YOUR MAIL HERE</h2>
+                    <p>
+                        <input type="email" id="from" placeholder="From (Email ID)" required />
+                    </p>
+                    <p>
+                        <input type="text" id="subject" placeholder="Subject" required />
+                    </p>
+                    <p>
+                        <textarea id="msg" cols="12" rows="12" placeholder="Body" required></textarea>
+                    </p>
+                    <p><button type="submit" id="submit">Send</button></p>
+                </form>
+            </div>
+        </div>
+        <hr>
+        <div class="tables">
+            <div class="valTab">
+                <table id="val">
+                    <tr>
+                        <td>
+                            <h2 class="table-heading">Valid Emails : <span id="valCount"></span></h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="invalTab">
+                <table id="inval">
+                    <tr>
+                        <td>
+                            <h2 class="table-heading">Invalid Emails : <span id="invalCount"></span></h2>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    </section>
+    <hr>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>var wow = new wow(
+            {
+                boxClass: 'wow',
+                aninmatedClass: 'animated',
+                offset: 0,
+                mobile: true,
+                live: true,
+                callback: function (box) {
+
+                },
+                scrollContainer: null,
+                resetAnimation: true,
+            }
+        );
+        wow.init();
+    </script>
+    <div class="footer-basic">
+        <footer>
+            <p class="copyright">Made by Suman Sutradhar</p>
+        </footer>
+    </div>
+</body>
+</html>

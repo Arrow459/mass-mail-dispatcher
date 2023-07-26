@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #e6e6e6;
+  color: #333;
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+.select {
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  font-size: 4rem;
+  text-align: left;
+}
+.box-heading {
+  font-size: 1.6rem;
+  display: block;
+  padding: 1rem;
+  margin: auto;
+  text-align: center;
+}
+.mailInfo {
+  display: block;
+  width: 50rem;
+  position: relative;
+  height: 65%;
+  background-color: rgb(204, 211, 214);
+  backdrop-filter: blur(0.8rem);
+  border-radius: 0.8rem;
+  box-shadow: 0.2rem 0.2rem 0.5rem #93a2ac;
+  z-index: 2;
+}
+#from,
+#subject {
+  margin: 1.4rem;
+  padding: 1rem;
+  width: 47rem;
+  height: 4.8rem;
+  border-radius: 4px;
+}
+#msg {
+  margin: 1.4rem;
+  padding: 1rem;
+  width: 47rem;
+  height: 14rem;
+  border-radius: 0.4rem;
+}
+#submit {
+  width: 15rem;
+  height: 5rem;
+  margin: 0;
+  position: absolute;
+  top: 92%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 3rem;
+}
+button {
+  background: #206a5d;
+  color: #e6dede;
+  border: 0.2rem solid #0f0000;
+  font-size: 1.6rem;
+  letter-spacing: 0.2rem;
+  padding: 1rem 2rem;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 15px 30px;
+  -webkit-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  box-shadow: 0 0.1rem 0.1rem #130b0b;
+}
+button:hover,
+button:focus {
+  background-color: #438a5e;
+}
+
+.select input {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  margin: 6vh auto;
+  border-radius: 5rem;
+  box-shadow: 0.5rem 0.5rem 1rem #000;
+  font-weight: 600;
+  font-size: 1.6rem;
+  outline: none;
+  width: 35rem;
+}
+.select input::file-selector-button {
+  background: #206a5d;
+  color: #fff;
+  padding: 2rem;
+  border: none;
+  border-radius: 5rem;
+  box-shadow: 0 0.1rem 0.1rem #6b4559;
+  outline: none;
+}
+.select input::file-selector-button:hover {
+  background-color: #438a5e;
+  cursor: pointer;
+}
+.tables {
+  width: 100rem;
+  margin: 0 auto;
+}
+table {
+  text-align: left;
+  float: left;
+  width: 50rem;
+}
+.table-heading {
+  font-size: 1.7rem;
+}
+tr td {
+  font-size: 1.7rem;
+}
+hr {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.footer-basic,
+.copyright {
+  margin-top: 1.5rem;
+  width: 100%;
+  height: 3rem;
+  text-align: center;
+  font-size: 1.8rem;
+  background-color: rgba(15, 13, 13, 0.918);
+  color: #aaa;
+}
